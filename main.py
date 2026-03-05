@@ -30,6 +30,9 @@ print(john)  # Виведення: Contact name: John, phones: 1112223333; 55555
 found_phone = john.find_phone("5555555555")
 print(f"{john.name}: {found_phone}")  # Виведення: 5555555555
 
+john.remove_phone("5555555555")
+print(john)
+
 # Видалення запису Jane
 book.delete("Jane")
 deleted_record = book.find("Jane")
